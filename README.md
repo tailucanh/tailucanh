@@ -2,11 +2,14 @@
 <a href="#" target="_blank">
   <img src="svg/smile.svg" width="1200" alt="smile-official" />
 </a>
-
+<br>
+<h1 align="center">
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+I'm+Tai+Smile❤️;" />
+</h1>
 <h2 align="center"> 🛠 Technologies and Tools 🛠</h2>
 <br>
 <!-- https://simpleicons.org/ -->
-<span><img src="https://img.shields.io/badge/Android-282C34?logo=android&logoColor=3DDC84" alt="Android logo" title="Android" height="25" /></span>
+<!-- <span><img src="https://img.shields.io/badge/Android-282C34?logo=android&logoColor=3DDC84" alt="Android logo" title="Android" height="25" /></span>
 &nbsp;
 <span><img src="https://img.shields.io/badge/Android Studio-282C34?logo=AndroidStudio&logoColor=3DDC84" alt="Android Studio logo" title="Android Studio" height="25" /></span>
 &nbsp;
@@ -55,8 +58,18 @@
 <span><img src="https://img.shields.io/badge/Unity-282C34?logo=unity&logoColor=FFFFFFFF" alt="Unity logo" title="Unity" height="25" /></span>
 &nbsp;
 <span><img src="https://img.shields.io/badge/Photoshop-282C34?logo=adobe photoshop&logoColor=FFFFFFFF" alt="Photoshop logo" title="Photoshop" height="25" /></span>
-&nbsp;
+&nbsp;-->
+<div align="center">
+     <img src="https://skillicons.dev/icons?i=flutter,dart,cs" /><br>
+    <img src="https://skillicons.dev/icons?i=nodejs,github,gitlab,express,firebase,mongodb" /><br>
+  <img src="https://skillicons.dev/icons?i=react,angular,electron,next,javascript,typescript,d3,redux,styledcomponents" /><br>
+    <img src="https://skillicons.dev/icons?i=jenkins,bootstrap,mui,mysql,html,css,sass,tailwind,vscode,figma,xd,ps,git" />
+</div>
 <br>
+
+<p align="center">
+  <img src="https://github.com/thanhtin4401/thanhtin4401/assets/85281544/a65ececb-7042-4a69-b9a6-71381c48b003" alt="giphy" />
+</p>
 
 <h2 align="center">🔥 GitHub Stats 🔥</h2>
 <!-- https://github.com/anuraghazra/github-readme-stats -->
@@ -70,8 +83,8 @@
 </a>
 </div>
 
-<br>
 
+<br>
 <h2 align="center">👽 Where to find me 👽</h2>
 <br>
 <!-- https://icons8.com -->
@@ -100,16 +113,19 @@
 </div>
 
 <br>
+<div align="center">
+  <h2>🐍 My Contributions 🐍</h2>
+  <br>
+  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/salesp07/salesp07/output/github-contribution-grid-snake.svg" />
+  <br/><br/><br/>
+</div>
 
+<div align="center">
+<h2> ✍️My Quote </h2>
 
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=The%20way%20you%20do%20one%20thing%20is%20the%20way%20you%20do%20everything.)
 
-
-###      ✍️My Quote 
-
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=C%C3%A1ch%20b%E1%BA%A1n%20l%C3%A0m%20m%E1%BB%99t%20vi%E1%BB%87c%20l%C3%A0%20c%C3%A1ch%20b%E1%BA%A1n%20l%C3%A0m%20m%E1%BB%8Di%20vi%E1%BB%87c
-)
-
-
+</div>
 
 
 
