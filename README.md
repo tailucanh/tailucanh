@@ -89,25 +89,25 @@
 <br>
 <!-- https://icons8.com -->
 <div align="center">
-  <a href="https://tailucanh.github.io/MyProfile/" target="blank">
+  <a href="https://tailucanh.github.io/MyProfile/" target="_blank">
     <img width="90" height="90" src="images/ic_myinfo.png" alt="smile-blog" />
   </a>
-  <a href="https://www.facebook.com/lucanh.tai" target="blank">
+  <a href="https://www.facebook.com/lucanh.tai" target="_blank">
     <img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" alt="smile-facebook" />
   </a>
-  <a href="https://www.youtube.com/channel/UCy7sxcFG-eGIzcjbn3aYHdQ" target="blank">
+  <a href="https://www.youtube.com/channel/UCy7sxcFG-eGIzcjbn3aYHdQ" target="_blank">
     <img src="https://img.icons8.com/bubbles/100/000000/youtube-squared.png" alt="smile-youtube" />
   </a>
-  <a href="https://www.linkedin.com/in/lucanhtai1504/" target="blank">
+  <a href="https://www.linkedin.com/in/lucanhtai1504/" target="_blank">
     <img src="https://img.icons8.com/bubbles/100/000000/linkedin.png" alt="smile-linkedin" />
   </a>
-  <a href="https://www.instagram.com/tai_it_dev/" target="blank">
+  <a href="https://www.instagram.com/tai_it_dev/" target="_blank">
     <img src="https://img.icons8.com/bubbles/100/000000/instagram.png" alt="smile-instagram" />
   </a>
-   <a href="https://www.tiktok.com/@tai_it_1504" target="blank">
+   <a href="https://www.tiktok.com/@tai_it_1504" target="_blank">
     <img src="https://img.icons8.com/bubbles/100/000000/tiktok.png" alt="smile-tiktok" />
   </a>
-  <a href="mailto:lucanhtai1504@gmail.com" target="top">
+  <a href="mailto:lucanhtai1504@gmail.com" target="_top">
     <img src="https://img.icons8.com/bubbles/100/000000/apple-mail.png" alt="smile-email" />
   </a>
 </div>
