@@ -101,7 +101,7 @@
   <a href="https://www.linkedin.com/in/lucanhtai1504/" target="_blank">
     <img src="https://img.icons8.com/bubbles/100/000000/linkedin.png" alt="smile-linkedin" />
   </a>
-  <a href="https://www.instagram.com/tai_it_dev/" target="_blank">
+  <a href="https://www.instagram.com/tai_it__1504/" target="_blank">
     <img src="https://img.icons8.com/bubbles/100/000000/instagram.png" alt="smile-instagram" />
   </a>
    <a href="https://www.tiktok.com/@tai_it_1504" target="_blank">
