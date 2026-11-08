@@ -1,134 +1,143 @@
-
-<a href="#" target="_blank">
-  <img src="svg/smile.svg" width="1200" alt="smile-official" />
+<a href="https://github.com/tailucanh">
+  <img src="svg/smile.svg" width="100%" alt="Hi Aliens! I'm Tai Smile from the Earth." />
 </a>
-<br>
-<h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+I'm+Tai+Smile❤️;" />
-</h1>
-<h2 align="center"> 🛠 Technologies and Tools 🛠</h2>
-<br>
-<!-- https://simpleicons.org/ -->
-<!-- <span><img src="https://img.shields.io/badge/Android-282C34?logo=android&logoColor=3DDC84" alt="Android logo" title="Android" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/Android Studio-282C34?logo=AndroidStudio&logoColor=3DDC84" alt="Android Studio logo" title="Android Studio" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/Kotlin-282C34?logo=kotlin&logoColor=F58018" alt="Kotlin logo" title="Kotlin" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/ReactNative-282C34?logo=react&logoColor=61DAFB" alt="ReactNative logo" title="ReactNative" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/Dart-282C34?logo=dart&logoColor=22ADF6" alt="Dart logo" title="Dart" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/Flutter-282C34?logo=flutter&logoColor=22ADF6" alt="Flutter logo" title="Flutter" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/Vue.js-282C34?logo=vue.js&logoColor=4FC08D" alt="Vue.js logo" title="Vue.js" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/Eclipse IDE-282C34?logo=Eclipse IDE&logoColor=A213FF" alt="Eclipse logo" title="Nuxt.js" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/Blockchain-282C34?logo=blockchain.com&logoColor=F40D12" alt="Blockchain logo" title="Node.js" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/Express-282C34?logo=express&logoColor=FFFFFF" alt="Express.js logo" title="Express.js" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/MongoDB-282C34?logo=mongodb&logoColor=47A248" alt="MongoDB logo" title="MongoDB" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwind-css&logoColor=38B2AC" alt="TailwindCSS logo" title="TailwindCSS" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/Three.js-282C34?logo=three.js&logoColor=FFFFFF" alt="Three.js logo" title="Three.js" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/HTML5-282C34?logo=html5&logoColor=E34F26" alt="HTML5 logo" title="HTML5" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/CSS3-282C34?logo=css3&logoColor=1572B6" alt="CSS3 logo" title="CSS3" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/Sass-282C34?logo=sass&logoColor=CC6699" alt="SASS logo" title="SASS" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/Bootstrap-282C34?logo=bootstrap&logoColor=7952B3" alt="Bootstrap logo" title="Bootstrap" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/ESLint-282C34?logo=eslint&logoColor=4B32C3" alt="ESLint logo" title="ESLint" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/git-282C34?logo=git&logoColor=F05032" alt="git logo" title="git" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/VS%20Code-282C34?logo=visual-studio-code&logoColor=007ACC" alt="Visual Studio Code logo" title="Visual Studio Code" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/Firebase-282C34?logo=firebase&logoColor=FFCA28" alt="Firebase logo" title="Firebase" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/WordPress-282C34?logo=wordPress&logoColor=21759B" alt="WordPress logo" title="WordPress" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/C Sharp-282C34?logo=c sharp&logoColor=5E99D8" alt="C Sharp logo" title="C Sharp" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/Unity-282C34?logo=unity&logoColor=FFFFFFFF" alt="Unity logo" title="Unity" height="25" /></span>
-&nbsp;
-<span><img src="https://img.shields.io/badge/Photoshop-282C34?logo=adobe photoshop&logoColor=FFFFFFFF" alt="Photoshop logo" title="Photoshop" height="25" /></span>
-&nbsp;-->
-<div align="center">
-     <img src="https://skillicons.dev/icons?i=flutter,dart,cs" /><br>
-    <img src="https://skillicons.dev/icons?i=nodejs,github,gitlab,express,firebase,mongodb" /><br>
-  <img src="https://skillicons.dev/icons?i=react,angular,electron,next,javascript,typescript,d3,redux,styledcomponents" /><br>
-    <img src="https://skillicons.dev/icons?i=jenkins,bootstrap,mui,mysql,html,css,sass,tailwind,vscode,figma,xd,ps,git" />
-</div>
-<br>
 
 <p align="center">
-  <img src="https://github.com/thanhtin4401/thanhtin4401/assets/85281544/a65ececb-7042-4a69-b9a6-71381c48b003" alt="giphy" />
+  <a href="https://github.com/tailucanh">
+    <img src="https://readme-typing-svg.demolab.com?font=Righteous&size=30&duration=3000&pause=900&color=22D3EE&center=true&vCenter=true&width=640&height=60&lines=Hi+there!+I'm+Tai+Smile+%F0%9F%91%8B;Mobile+%26+Game+Developer+%40+FPT;Flutter+%C2%B7+Unity+%C2%B7+Node.js+%C2%B7+TypeScript;Building+tools+for+AI+coding+agents+%F0%9F%A4%96" alt="Typing intro" />
+  </a>
 </p>
 
-<h2 align="center">🔥 GitHub Stats 🔥</h2>
-<!-- https://github.com/anuraghazra/github-readme-stats -->
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=tailucanh&label=Profile%20views&color=7c3aed&style=flat-square" alt="Profile views" />
+  <a href="https://github.com/tailucanh?tab=followers"><img src="https://img.shields.io/github/followers/tailucanh?label=Followers&style=flat-square&color=22d3ee&logo=github" alt="Followers" /></a>
+  <img src="https://img.shields.io/badge/Location-Vietnam-a855f7?style=flat-square" alt="Location: Vietnam" />
+  <img src="https://img.shields.io/badge/Company-FPT-f97316?style=flat-square" alt="Company: FPT" />
+</p>
+
+---
+
+## 👽 About me
+
+<table>
+<tr>
+<td width="58%" valign="top">
+
+- 🏢 Developer at **FPT**, based in **Vietnam**
+- 📱 Building mobile apps with **Flutter** and **React Native**
+- 🎮 Making games with **Unity** and **C#**
+- 🌐 Backend and web with **Node.js**, **Express**, **MongoDB**, **React**
+- 🤖 Lately: tools that make **AI coding agents** cheaper and faster
+- 💬 Ask me about Flutter, Unity, Node.js or MCP servers
+- ⚡ Motto: *"The way you do one thing is the way you do everything."*
+
+</td>
+<td width="42%" align="center">
+  <img src="https://github.com/thanhtin4401/thanhtin4401/assets/85281544/a65ececb-7042-4a69-b9a6-71381c48b003" width="100%" alt="Coding" />
+</td>
+</tr>
+</table>
+
+## 🚀 Featured project
+
+<table>
+<tr>
+<td>
+
+### [offload-mcp-server](https://github.com/tailucanh/offload-mcp-server)
+
+Let your main coding agent delegate heavy reading to a second agent, and read back only the answer.
+Fewer tokens for your main agent, same quality of answers.
+
+<a href="https://github.com/tailucanh/offload-mcp-server"><img src="https://img.shields.io/github/stars/tailucanh/offload-mcp-server?style=flat-square&color=facc15&logo=github" alt="GitHub stars" /></a>
+<a href="https://www.npmjs.com/package/offload-mcp-server"><img src="https://img.shields.io/npm/v/offload-mcp-server?style=flat-square&color=cb3837&logo=npm" alt="npm version" /></a>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+<img src="https://img.shields.io/badge/MCP-server-7c3aed?style=flat-square" alt="MCP server" />
+<img src="https://img.shields.io/github/license/tailucanh/offload-mcp-server?style=flat-square&color=4ade80" alt="License" />
+
+```bash
+npx -y offload-mcp-server setup
+```
+
+</td>
+</tr>
+</table>
+
+<details>
+<summary><b>More projects</b></summary>
 <br>
-<div align=center>
-  <a href="https://github.com/anuraghazra/convoychat">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=tailucanh&layout=compact&langs_count=8&card_width=320&show_icons=true&theme=onedark" />
-</a>
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=tailucanh&show_icons=true&theme=onedark" />
-</a>
-</div>
 
+| Project | What it is | Stack |
+| --- | --- | --- |
+| [finder_dating_app](https://github.com/tailucanh/finder_dating_app) | Dating app | ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) |
+| [monumental_habit_app](https://github.com/tailucanh/monumental_habit_app) | Habit tracker | ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) |
+| [flutter_draw_app](https://github.com/tailucanh/flutter_draw_app) | Drawing app | ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) |
+| [unity_draw_app](https://github.com/tailucanh/unity_draw_app) | Drawing app | ![Unity](https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white) |
+| [tiktok-live-template](https://github.com/tailucanh/tiktok-live-template) | TikTok LIVE template | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
+| [blockchain-community-based-voting-dapp](https://github.com/tailucanh/blockchain-community-based-voting-dapp) | Community voting dApp | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
 
-<br>
-<h2 align="center">👽 Where to find me 👽</h2>
-<br>
-<!-- https://icons8.com -->
-<div align="center">
-  <a href="https://tailucanh.github.io/MyProfile/" target="_blank">
-    <img width="90" height="90" src="images/ic_myinfo.png" alt="smile-blog" />
-  </a>
-  <a href="https://www.facebook.com/lucanh.tai" target="_blank">
-    <img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" alt="smile-facebook" />
-  </a>
-  <a href="https://www.youtube.com/channel/UCy7sxcFG-eGIzcjbn3aYHdQ" target="_blank">
-    <img src="https://img.icons8.com/bubbles/100/000000/youtube-squared.png" alt="smile-youtube" />
-  </a>
-  <a href="https://www.linkedin.com/in/lucanhtai1504/" target="_blank">
-    <img src="https://img.icons8.com/bubbles/100/000000/linkedin.png" alt="smile-linkedin" />
-  </a>
-  <a href="https://www.instagram.com/tai_it__1504/" target="_blank">
-    <img src="https://img.icons8.com/bubbles/100/000000/instagram.png" alt="smile-instagram" />
-  </a>
-   <a href="https://www.tiktok.com/@tai_it_1504" target="_blank">
-    <img src="https://img.icons8.com/bubbles/100/000000/tiktok.png" alt="smile-tiktok" />
-  </a>
-  <a href="mailto:lucanhtai1504@gmail.com" target="_top">
-    <img src="https://img.icons8.com/bubbles/100/000000/apple-mail.png" alt="smile-email" />
-  </a>
-</div>
+</details>
 
-<br>
-<div align="center">
-  <h2>🐍 My Contributions 🐍</h2>
-  <br>
-  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/salesp07/salesp07/output/github-contribution-grid-snake.svg" />
-  <br/><br/><br/>
-</div>
+## 🛠 Tech stack
 
-<div align="center">
-<h2> ✍️My Quote </h2>
+<table align="center">
+<tr>
+  <td align="center" width="130"><b>📱 Mobile</b></td>
+  <td><img src="https://skillicons.dev/icons?i=flutter,dart,react,kotlin,java,androidstudio" alt="Flutter, Dart, React Native, Kotlin, Java, Android Studio" /></td>
+</tr>
+<tr>
+  <td align="center"><b>🎮 Game</b></td>
+  <td><img src="https://skillicons.dev/icons?i=unity,cs,cpp" alt="Unity, C#, C++" /></td>
+</tr>
+<tr>
+  <td align="center"><b>⚙️ Backend</b></td>
+  <td><img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,mysql,firebase" alt="Node.js, Express, MongoDB, MySQL, Firebase" /></td>
+</tr>
+<tr>
+  <td align="center"><b>🌐 Frontend</b></td>
+  <td><img src="https://skillicons.dev/icons?i=ts,js,nextjs,redux,tailwind,sass,bootstrap,materialui" alt="TypeScript, JavaScript, Next.js, Redux, Tailwind, Sass, Bootstrap, MUI" /></td>
+</tr>
+<tr>
+  <td align="center"><b>🧰 Tools</b></td>
+  <td><img src="https://skillicons.dev/icons?i=git,github,gitlab,vscode,postman,figma,ps,jenkins" alt="Git, GitHub, GitLab, VS Code, Postman, Figma, Photoshop, Jenkins" /></td>
+</tr>
+</table>
 
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=The%20way%20you%20do%20one%20thing%20is%20the%20way%20you%20do%20everything.)
+## 🔥 GitHub stats
 
-</div>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tailucanh/tailucanh/output/stats.svg" height="165" alt="GitHub stats" />
+  <img src="https://raw.githubusercontent.com/tailucanh/tailucanh/output/top-langs.svg" height="165" alt="Most used languages" />
+</p>
 
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=tailucanh&theme=tokyonight&hide_border=true&background=0B1023&ring=A855F7&fire=22D3EE&currStreakLabel=22D3EE" height="165" alt="GitHub streak" />
+</p>
 
+## 🐍 My contributions
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailucanh/tailucanh/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailucanh/tailucanh/output/github-contribution-grid-snake.svg" />
+    <img src="https://raw.githubusercontent.com/tailucanh/tailucanh/output/github-contribution-grid-snake-dark.svg" alt="Snake eating my contributions" />
+  </picture>
+</p>
 
+## 🛸 Where to find me
 
+<p align="center">
+  <a href="https://tailucanh.github.io/MyProfile/"><img src="https://img.shields.io/badge/Portfolio-0B1023?style=for-the-badge&logo=googlechrome&logoColor=22D3EE" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/lucanhtai1504/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://www.facebook.com/lucanh.tai"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" /></a>
+  <a href="https://www.tiktok.com/@tai_it_1504"><img src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white" alt="TikTok" /></a>
+  <a href="https://www.instagram.com/tai_it__1504/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
+  <a href="https://www.youtube.com/channel/UCy7sxcFG-eGIzcjbn3aYHdQ"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" /></a>
+  <a href="mailto:lucanhtai1504@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+</p>
 
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=The%20way%20you%20do%20one%20thing%20is%20the%20way%20you%20do%20everything." alt="My quote" />
+</p>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:22d3ee,100:a855f7&height=120&section=footer" width="100%" alt="" />
