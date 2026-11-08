@@ -21,6 +21,17 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      # Stats + top languages cards, built from the GitHub API with GITHUB_TOKEN.
+      # Runs before snk: snk is a Docker action and creates dist/ as root, which the runner user cannot write to.
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Build stats cards
+        run: node .github/scripts/stats.mjs tailucanh dist
+        continue-on-error: true # a stats failure must not block the snake update
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       # Contribution snake (light + dark)
       - uses: Platane/snk@v3
         with:
@@ -28,14 +39,6 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#22d3ee&color_dots=#161b22,#3b0764,#6b21a8,#a855f7,#e9d5ff
-
-      # Stats + top languages cards, built from the GitHub API with GITHUB_TOKEN
-      - uses: actions/setup-node@v5
-        with:
-          node-version: 22
-      - run: node .github/scripts/stats.mjs tailucanh dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
