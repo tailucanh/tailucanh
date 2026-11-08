@@ -23,72 +23,93 @@ async function gql(query, variables) {
   return json.data;
 }
 
-async function fetchData() {
-  const base = await gql(
-    `query($login: String!) {
-      user(login: $login) {
-        name
-        followers { totalCount }
-        pullRequests { totalCount }
-        issues { totalCount }
-        repositoriesContributedTo(contributionTypes: [COMMIT, PULL_REQUEST, ISSUE, REPOSITORY]) { totalCount }
-        contributionsCollection { totalCommitContributions restrictedContributionsCount contributionYears }
-      }
-    }`,
-    { login: LOGIN },
-  );
-  const user = base.user;
+async function rest(path) {
+  const headers = { Accept: "application/vnd.github+json", "User-Agent": "profile-stats" };
+  if (TOKEN) headers.Authorization = `Bearer ${TOKEN}`;
+  const res = await fetch(`https://api.github.com${path}`, { headers });
+  if (!res.ok) throw new Error(`REST ${path} -> ${res.status}: ${(await res.text()).slice(0, 300)}`);
+  return res.json();
+}
 
-  // All-time contributions: one contributionsCollection per calendar year.
-  let allTime = 0;
-  for (const year of user.contributionsCollection.contributionYears) {
-    const d = await gql(
-      `query($login: String!, $from: DateTime!, $to: DateTime!) {
-        user(login: $login) { contributionsCollection(from: $from, to: $to) { contributionCalendar { totalContributions } } }
-      }`,
-      { login: LOGIN, from: `${year}-01-01T00:00:00Z`, to: `${year}-12-31T23:59:59Z` },
-    );
-    allTime += d.user.contributionsCollection.contributionCalendar.totalContributions;
+// Runs one optional section; on failure logs why and returns the fallback instead of failing the job.
+async function optional(label, fallback, fn) {
+  try {
+    return await fn();
+  } catch (err) {
+    console.warn(`::warning::${label} unavailable: ${err.message}`);
+    return fallback;
   }
+}
 
+// GitHub linguist colors for languages we are likely to see (REST does not return colors).
+const LANG_COLORS = {
+  JavaScript: "#f1e05a", TypeScript: "#3178c6", Dart: "#00B4AB", "C#": "#178600", "C++": "#f34b7d", C: "#555555",
+  Java: "#b07219", Kotlin: "#A97BFF", Swift: "#F05138", Python: "#3572A5", Go: "#00ADD8", Rust: "#dea584",
+  PHP: "#4F5D95", Ruby: "#701516", Erlang: "#B83998", Shell: "#89e051", PowerShell: "#012456", Vue: "#41b883",
+  "Objective-C": "#438eff", CMake: "#DA3434", Solidity: "#AA6746", Lua: "#000080", GDScript: "#355570",
+};
+
+async function fetchData() {
+  // Core data from REST (works with the Actions GITHUB_TOKEN for public data).
+  const user = await rest(`/users/${LOGIN}`);
   const repos = [];
-  let after = null;
-  do {
-    const d = await gql(
-      `query($login: String!, $after: String) {
-        user(login: $login) {
-          repositories(first: 100, after: $after, ownerAffiliations: OWNER, isFork: false) {
-            pageInfo { hasNextPage endCursor }
-            nodes {
-              stargazerCount
-              languages(first: 10, orderBy: { field: SIZE, direction: DESC }) { edges { size node { name color } } }
-            }
-          }
-        }
-      }`,
-      { login: LOGIN, after },
+  for (let page = 1; ; page++) {
+    const batch = await rest(`/users/${LOGIN}/repos?type=owner&per_page=100&page=${page}`);
+    repos.push(...batch.filter((r) => !r.fork));
+    if (batch.length < 100) break;
+  }
+  const languages = [];
+  for (const r of repos) {
+    const langs = await optional(`languages of ${r.name}`, {}, () => rest(`/repos/${r.full_name}/languages`));
+    for (const [name, size] of Object.entries(langs)) languages.push({ name, color: LANG_COLORS[name] || "#8b949e", size });
+  }
+  const count = (q) => optional(`search ${q}`, null, async () => (await rest(`/search/issues?per_page=1&q=${encodeURIComponent(q)}`)).total_count);
+  const prs = await count(`author:${LOGIN} type:pr`);
+  const issues = await count(`author:${LOGIN} type:issue`);
+
+  // Contribution numbers only exist in GraphQL; keep them optional.
+  const contrib = await optional("contributions (GraphQL)", null, async () => {
+    const base = await gql(
+      `query($login: String!) { user(login: $login) { contributionsCollection { totalCommitContributions restrictedContributionsCount contributionYears } } }`,
+      { login: LOGIN },
     );
-    const page = d.user.repositories;
-    repos.push(...page.nodes);
-    after = page.pageInfo.hasNextPage ? page.pageInfo.endCursor : null;
-  } while (after);
+    const cc = base.user.contributionsCollection;
+    let allTime = 0;
+    for (const year of cc.contributionYears) {
+      const d = await gql(
+        `query($login: String!, $from: DateTime!, $to: DateTime!) {
+          user(login: $login) { contributionsCollection(from: $from, to: $to) { contributionCalendar { totalContributions } } }
+        }`,
+        { login: LOGIN, from: `${year}-01-01T00:00:00Z`, to: `${year}-12-31T23:59:59Z` },
+      );
+      allTime += d.user.contributionsCollection.contributionCalendar.totalContributions;
+    }
+    return { commitsYear: cc.totalCommitContributions + cc.restrictedContributionsCount, allTime };
+  });
+  const contributedTo = await optional("contributedTo (GraphQL)", null, async () => {
+    const d = await gql(
+      `query($login: String!) { user(login: $login) { repositoriesContributedTo(contributionTypes: [COMMIT, PULL_REQUEST, ISSUE, REPOSITORY]) { totalCount } } }`,
+      { login: LOGIN },
+    );
+    return d.user.repositoriesContributedTo.totalCount;
+  });
 
   return {
     name: user.name || LOGIN,
-    stars: repos.reduce((s, r) => s + r.stargazerCount, 0),
-    commitsYear: user.contributionsCollection.totalCommitContributions + user.contributionsCollection.restrictedContributionsCount,
-    prs: user.pullRequests.totalCount,
-    issues: user.issues.totalCount,
-    contributedTo: user.repositoriesContributedTo.totalCount,
-    followers: user.followers.totalCount,
-    repoCount: repos.length,
-    allTime,
-    languages: repos.flatMap((r) => r.languages.edges.map((e) => ({ name: e.node.name, color: e.node.color, size: e.size }))),
+    stars: repos.reduce((s, r) => s + r.stargazers_count, 0),
+    commitsYear: contrib?.commitsYear ?? null,
+    prs,
+    issues,
+    contributedTo,
+    followers: user.followers,
+    repoCount: user.public_repos,
+    allTime: contrib?.allTime ?? null,
+    languages,
   };
 }
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
-const fmt = (n) => (n >= 1000 ? `${(n / 1000).toFixed(n >= 10000 ? 0 : 1)}k` : String(n));
+const fmt = (n) => (n == null ? "—" : n >= 1000 ? `${(n / 1000).toFixed(n >= 10000 ? 0 : 1)}k` : String(n));
 
 const FONT = "'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif";
 const frame = (w, h, title, body) => `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(title)}">
@@ -132,13 +153,15 @@ function statsCard(d) {
   </g>`;
     })
     .join("\n");
-  // Ring on the right: all-time contributions (ring is decorative, always fills to 100%).
+  // Ring on the right: all-time contributions, or followers if contributions are unavailable.
+  // The ring is decorative and always fills to 100%.
+  const [ringValue, ringLabel, ringSub] = d.allTime != null ? [d.allTime, "contributions", "all time"] : [d.followers, "followers", "on GitHub"];
   const ring = `  <g transform="translate(395 110)">
     <circle r="40" fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-width="7"/>
     <circle r="40" fill="none" stroke="url(#edge)" stroke-width="7" stroke-linecap="round" stroke-dasharray="251" transform="rotate(-90)" style="animation: grow 1.4s ease-out"/>
-    <text y="4" text-anchor="middle" class="value" style="font-size:22px">${fmt(d.allTime)}</text>
-    <text y="22" text-anchor="middle" class="muted">contributions</text>
-    <text y="62" text-anchor="middle" class="muted">all time</text>
+    <text y="4" text-anchor="middle" class="value" style="font-size:22px">${fmt(ringValue)}</text>
+    <text y="22" text-anchor="middle" class="muted">${ringLabel}</text>
+    <text y="62" text-anchor="middle" class="muted">${ringSub}</text>
   </g>`;
   return frame(495, 205, `${d.name}'s GitHub Stats`, `${lines}\n${ring}`);
 }
