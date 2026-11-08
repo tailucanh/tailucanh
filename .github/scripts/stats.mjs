@@ -58,11 +58,9 @@ async function fetchData() {
     repos.push(...batch.filter((r) => !r.fork));
     if (batch.length < 100) break;
   }
-  const languages = [];
-  for (const r of repos) {
-    const langs = await optional(`languages of ${r.name}`, {}, () => rest(`/repos/${r.full_name}/languages`));
-    for (const [name, size] of Object.entries(langs)) languages.push({ name, color: LANG_COLORS[name] || "#8b949e", size });
-  }
+  // Weight = 1 per repo, by its primary language. Byte counts get skewed by vendored libraries
+  // (a single repo with bundled C/C++/Python sources outweighed everything else).
+  const languages = repos.filter((r) => r.language).map((r) => ({ name: r.language, color: LANG_COLORS[r.language] || "#8b949e", size: 1 }));
   const count = (q) => optional(`search ${q}`, null, async () => (await rest(`/search/issues?per_page=1&q=${encodeURIComponent(q)}`)).total_count);
   const prs = await count(`author:${LOGIN} type:pr`);
   const issues = await count(`author:${LOGIN} type:issue`);
@@ -202,7 +200,8 @@ function langsCard(d) {
   </g>`;
     })
     .join("\n");
-  return frame(495, 205, "Most Used Languages", `${bar}\n${items}`);
+  const sub = `  <text x="471" y="36" text-anchor="end" class="muted">by repository</text>`;
+  return frame(495, 205, "Most Used Languages", `${sub}\n${bar}\n${items}`);
 }
 
 const data = process.env.MOCK ? JSON.parse(readFileSync(process.env.MOCK, "utf8")) : await fetchData();
