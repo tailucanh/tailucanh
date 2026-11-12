@@ -28,6 +28,7 @@
 - 🎮 Making games with **Unity** and **C#**
 - 🌐 Backend and web with **Node.js**, **Express**, **MongoDB**, **React**
 - 🤖 Lately: tools that make **AI coding agents** cheaper and faster
+- 🐐 Side project: **[MiēMiē](https://hoc.miemie.io.vn)**, a free web app for learning Chinese
 - 💬 Ask me about Flutter, Unity, Node.js or MCP servers
 - ⚡ Motto: *"The way you do one thing is the way you do everything."*
 
@@ -38,7 +39,7 @@
 </tr>
 </table>
 
-## 🚀 Featured project
+## 🚀 Featured projects
 
 <table>
 <tr>
@@ -58,6 +59,29 @@ Fewer tokens for your main agent, same quality of answers.
 ```bash
 npx -y offload-mcp-server setup
 ```
+
+</td>
+</tr>
+<tr>
+<td>
+
+### [MiēMiē 咩咩](https://hoc.miemie.io.vn): learn Chinese with Miē the goat
+
+A free web app for Vietnamese people learning Chinese on their own, from zero to HSK 6. No install: open it in any browser.
+
+- 🗺️ A 7-stage roadmap that tells you what to study today
+- 🎬 76 video lessons with interactive slides, 300+ auto-graded exams (HSK, HSKK, university entrance)
+- 🃏 A 14,000+ word dictionary, spaced-repetition flashcards and 16 review games
+- 🎨 214 illustrated radicals, 436 idioms with animated pictures, pronunciation practice with scoring
+
+<a href="https://hoc.miemie.io.vn"><img src="https://img.shields.io/badge/Live-hoc.miemie.io.vn-f7931e?style=flat-square&logo=googlechrome&logoColor=white" alt="Live site" /></a>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+<img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP" />
+<img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite" />
+<img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firebase" />
+<img src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=pwa&logoColor=white" alt="PWA" />
+
+<a href="https://hoc.miemie.io.vn"><img src="images/miemie-preview.jpg" width="100%" alt="MiēMiē: a free web app for learning Chinese, made for Vietnamese learners" /></a>
 
 </td>
 </tr>
