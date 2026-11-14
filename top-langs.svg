@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="205" viewBox="0 0 495 205" role="img" aria-label="Most Used Languages">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1023"/><stop offset="1" stop-color="#140c2b"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; }
+    .title { font-size: 17px; font-weight: 700; fill: url(#edge); }
+    .label { font-size: 13.5px; fill: #c9d1d9; }
+    .value { font-size: 13.5px; font-weight: 700; fill: #ffffff; }
+    .muted { font-size: 11px; fill: #8b949e; }
+    .row { opacity: 0; animation: fade .5s ease-out forwards; }
+    @keyframes fade { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+    @keyframes grow { from { stroke-dashoffset: 251; } }
+    @keyframes bar { from { transform: scaleX(0); } }
+  </style>
+  <rect x="1" y="1" width="493" height="203" rx="12" fill="url(#bg)" stroke="url(#edge)" stroke-opacity=".55"/>
+  <text x="24" y="36" class="title">Most Used Languages</text>
+  <text x="471" y="36" text-anchor="end" class="muted">by repository</text>
+  <clipPath id="round"><rect width="447" height="10" rx="5"/></clipPath>
+  <g transform="translate(24 54)"><g clip-path="url(#round)" style="transform-origin:left;animation: bar 1s ease-out"><rect x="0.00" y="0" width="156.45" height="10" fill="#b07219"/><rect x="156.45" y="0" width="122.93" height="10" fill="#f1e05a"/><rect x="279.38" y="0" width="67.05" height="10" fill="#178600"/><rect x="346.43" y="0" width="55.88" height="10" fill="#00B4AB"/><rect x="402.30" y="0" width="11.18" height="10" fill="#555555"/><rect x="413.48" y="0" width="11.18" height="10" fill="#3178c6"/><rect x="424.65" y="0" width="11.18" height="10" fill="#B83998"/><rect x="435.83" y="0" width="11.18" height="10" fill="#f34b7d"/></g></g>
+  <g class="row" style="animation-delay:300ms">
+    <circle cx="30" cy="93.5" r="5" fill="#b07219"/>
+    <text x="42" y="98" class="label">Java</text>
+    <text x="224" y="98" text-anchor="end" class="muted">35.0%</text>
+  </g>
+  <g class="row" style="animation-delay:390ms">
+    <circle cx="260" cy="93.5" r="5" fill="#f1e05a"/>
+    <text x="272" y="98" class="label">JavaScript</text>
+    <text x="454" y="98" text-anchor="end" class="muted">27.5%</text>
+  </g>
+  <g class="row" style="animation-delay:480ms">
+    <circle cx="30" cy="118.5" r="5" fill="#178600"/>
+    <text x="42" y="123" class="label">C#</text>
+    <text x="224" y="123" text-anchor="end" class="muted">15.0%</text>
+  </g>
+  <g class="row" style="animation-delay:570ms">
+    <circle cx="260" cy="118.5" r="5" fill="#00B4AB"/>
+    <text x="272" y="123" class="label">Dart</text>
+    <text x="454" y="123" text-anchor="end" class="muted">12.5%</text>
+  </g>
+  <g class="row" style="animation-delay:660ms">
+    <circle cx="30" cy="143.5" r="5" fill="#555555"/>
+    <text x="42" y="148" class="label">C</text>
+    <text x="224" y="148" text-anchor="end" class="muted">2.5%</text>
+  </g>
+  <g class="row" style="animation-delay:750ms">
+    <circle cx="260" cy="143.5" r="5" fill="#3178c6"/>
+    <text x="272" y="148" class="label">TypeScript</text>
+    <text x="454" y="148" text-anchor="end" class="muted">2.5%</text>
+  </g>
+  <g class="row" style="animation-delay:840ms">
+    <circle cx="30" cy="168.5" r="5" fill="#B83998"/>
+    <text x="42" y="173" class="label">Erlang</text>
+    <text x="224" y="173" text-anchor="end" class="muted">2.5%</text>
+  </g>
+  <g class="row" style="animation-delay:930ms">
+    <circle cx="260" cy="168.5" r="5" fill="#f34b7d"/>
+    <text x="272" y="173" class="label">C++</text>
+    <text x="454" y="173" text-anchor="end" class="muted">2.5%</text>
+  </g>
+</svg>
