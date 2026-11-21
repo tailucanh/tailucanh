@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="205" viewBox="0 0 495 205" role="img" aria-label="Lục Anh Tài&#39;s GitHub Stats">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1023"/><stop offset="1" stop-color="#140c2b"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; }
+    .title { font-size: 17px; font-weight: 700; fill: url(#edge); }
+    .label { font-size: 13.5px; fill: #c9d1d9; }
+    .value { font-size: 13.5px; font-weight: 700; fill: #ffffff; }
+    .muted { font-size: 11px; fill: #8b949e; }
+    .row { opacity: 0; animation: fade .5s ease-out forwards; }
+    @keyframes fade { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+    @keyframes grow { from { stroke-dashoffset: 251; } }
+    @keyframes bar { from { transform: scaleX(0); } }
+  </style>
+  <rect x="1" y="1" width="493" height="203" rx="12" fill="url(#bg)" stroke="url(#edge)" stroke-opacity=".55"/>
+  <text x="24" y="36" class="title">Lục Anh Tài&#39;s GitHub Stats</text>
+  <g class="row" style="animation-delay:150ms">
+    <circle cx="30" cy="65.5" r="4" fill="#facc15"/>
+    <text x="44" y="70" class="label">Total stars earned:</text>
+    <text x="230" y="70" class="value">23</text>
+  </g>
+  <g class="row" style="animation-delay:270ms">
+    <circle cx="30" cy="87.5" r="4" fill="#22d3ee"/>
+    <text x="44" y="92" class="label">Commits (last year):</text>
+    <text x="230" y="92" class="value">25</text>
+  </g>
+  <g class="row" style="animation-delay:390ms">
+    <circle cx="30" cy="109.5" r="4" fill="#a855f7"/>
+    <text x="44" y="114" class="label">Pull requests:</text>
+    <text x="230" y="114" class="value">20</text>
+  </g>
+  <g class="row" style="animation-delay:510ms">
+    <circle cx="30" cy="131.5" r="4" fill="#f472b6"/>
+    <text x="44" y="136" class="label">Issues:</text>
+    <text x="230" y="136" class="value">0</text>
+  </g>
+  <g class="row" style="animation-delay:630ms">
+    <circle cx="30" cy="153.5" r="4" fill="#4ade80"/>
+    <text x="44" y="158" class="label">Contributed to:</text>
+    <text x="230" y="158" class="value">1</text>
+  </g>
+  <g class="row" style="animation-delay:750ms">
+    <circle cx="30" cy="175.5" r="4" fill="#60a5fa"/>
+    <text x="44" y="180" class="label">Public repositories:</text>
+    <text x="230" y="180" class="value">58</text>
+  </g>
+  <g transform="translate(395 110)">
+    <circle r="40" fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-width="7"/>
+    <circle r="40" fill="none" stroke="url(#edge)" stroke-width="7" stroke-linecap="round" stroke-dasharray="251" transform="rotate(-90)" style="animation: grow 1.4s ease-out"/>
+    <text y="4" text-anchor="middle" class="value" style="font-size:22px">320</text>
+    <text y="22" text-anchor="middle" class="muted">contributions</text>
+    <text y="62" text-anchor="middle" class="muted">all time</text>
+  </g>
+</svg>
